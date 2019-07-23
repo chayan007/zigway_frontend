@@ -47,4 +47,4 @@ export default LoginForm;
 
 LoginForm.propTypes = {
     handle_login: PropTypes.func.isRequired
-}
+};

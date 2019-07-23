@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 class SignupForm extends React.Component {
     state = {
         username: '',
+        email: '',
         password: ''
     };
 
@@ -27,6 +28,13 @@ class SignupForm extends React.Component {
                     type="text"
                     name="username"
                     value={this.state.username}
+                    onChange={this.handle_change}
+                />
+                <label htmlFor="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    value={this.state.email}
                     onChange={this.handle_change}
                 />
                 <label htmlFor="password">Password</label>

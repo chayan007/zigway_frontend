@@ -48,6 +48,12 @@ class App extends Component{
         });
   };
 
+    display_form = form => {
+        this.setState({
+            displayed_form: form
+        });
+    };
+
   handle_signup = (e, data) => {
     e.preventDefault();
     fetch('http://localhost:8000/authentication/users/', {
@@ -72,7 +78,7 @@ class App extends Component{
     localStorage.removeItem('token');
     this.setState({
         logged_in: false,
-        username: ''
+        username: '',
     });
   };
 

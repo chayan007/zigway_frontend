@@ -48,4 +48,3 @@ SignupForm.propTypes = {
     handle_signup: PropTypes.func.isRequired
 };
 
-}
